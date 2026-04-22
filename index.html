@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alemão do Corte</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <h1>Alemão do Corte</h1>
-    </div>
+    <h1>Alemão do Corte</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="#e3e3e3" onclick="clickMenu()">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg>
+</div>
+
+<div id="itens">
+    <!-- seu menu -->
+</div>
 
     <nav>
         <ul>
@@ -20,6 +29,7 @@
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#galeria">Galeria</a></li>
             <li><a href="#contato">Contato</a></li>
+            
         </ul>
     </nav>
 
@@ -271,7 +281,14 @@
         const url = `https://wa.me/${numero}?text=${texto}`;
         window.open(url, '_blank');
     });
-</script>
 
+</script> 
+
+<script>
+function clickMenu(){
+    let menu = document.querySelector('nav ul')
+    menu.classList.toggle('ativo')
+}
+</script>
 </body>
 </html>
