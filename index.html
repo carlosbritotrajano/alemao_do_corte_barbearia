@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alemão do Corte</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Alemão do Corte</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#banner">Página Inicial</a></li>
+            <li><a href="#historia">Quem Somos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="rede-social">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+    </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner" id="banner">
+    <div class="banner-conteudo">
+        <h2>Seu estilo começa no corte certo</h2>
+        <p>Agende seu horário e venha viver a experiência Alemão do Corte.</p>
+        <a href="#contato" class="btn-agendar">Agendar horário</a>
+    </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="historia" id="historia">
+    <div class="historia-img">
+        <img src="imagens/bannerhistori1.jpg" alt="Nossa História">
+    </div>
+
+    <div class="historia-texto">
+        <h2>NOSSA HISTÓRIA</h2>
+
+        <p>
+            Sou um parágrafo. Clique aqui para editar e adicionar o seu próprio texto.
+        </p>
+
+        <p>
+            Sou um parágrafo. Clique aqui para editar e adicionar o seu próprio texto.
+        </p>
+    </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="servicos" id="servicos">
+    <h2>SERVIÇOS</h2>
+
+    <div class="lista-servicos">
+        <div class="item">
+            <span>Corte</span>
+            <span>R$25</span>
+        </div>
+
+        <div class="item">
+            <span>Corte e Alisante</span>
+            <span>R$20</span>
+        </div>
+
+        <div class="item">
+            <span>Corte com Penteado</span>
+            <span>R$15</span>
+        </div>
+
+        <div class="item">
+            <span>Corte com Luzes</span>
+            <span>R$15</span>
+        </div>
+
+        <div class="item">
+            <span>Barba</span>
+            <span>R$30</span>
+        </div>
+
+        <div class="item">
+            <span>Barba desenhada</span>
+            <span>R$22</span>
+        </div>
+
+        <div class="item">
+            <span>Sobrancelha</span>
+            <span>R$10</span>
+        </div>
+    </div>
+
+    <div class="agendamento-servico">
+        <a href="#contato" class="btn-agendar">Agendar horário</a>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria" id="galeria">
+    <h2>GALERIA</h2>
+
+    <div class="galeria-grid">
+        <img src="imagens/banner1.jpg" alt="Galeria 1" class="galeria-img">
+        <img src="imagens/banner2.jpg" alt="Galeria 2" class="galeria-img">
+        <img src="imagens/banner3.jpg" alt="Galeria 3" class="galeria-img">
+        <img src="imagens/banner1.jpg" alt="Galeria 4" class="galeria-img">
+        <img src="imagens/banner2.jpg" alt="Galeria 5" class="galeria-img">
+        <img src="imagens/banner3.jpg" alt="Galeria 6" class="galeria-img">
+    </div>
+</section>
+
+<!-- MODAL DA GALERIA -->
+<div class="modal-galeria" id="modalGaleria">
+    <span class="fechar-modal" id="fecharModal">&times;</span>
+    <span class="seta seta-esquerda" id="anterior">&#10094;</span>
+    <img class="modal-img" id="imagemModal" src="" alt="Imagem ampliada">
+    <span class="seta seta-direita" id="proxima">&#10095;</span>
+</div>
+
+<!-- CONTATO / AGENDAMENTO -->
+<section class="contato" id="contato">
+    <h2>AGENDAMENTO</h2>
+
+    <p class="info-funcionamento">
+        Atendimento de terça a sábado, das 08h às 20h.<br>
+        Fechado aos domingos, segundas e feriados.
+    </p>
+
+    <form class="form-contato" id="formAgendamento">
+        <div class="linha">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="telefone" placeholder="Telefone" required>
+        </div>
+
+        <select id="servico" required>
+            <option value="">Selecione o serviço</option>
+            <option>Corte</option>
+            <option>Barba</option>
+            <option>Corte + Barba</option>
+            <option>Sobrancelha</option>
+        </select>
+
+        <div class="linha">
+            <input type="date" id="data" required>
+
+            <select id="hora" required>
+                <option value="">Horário</option>
+                <option>08:00</option>
+                <option>08:30</option>
+                <option>09:00</option>
+                <option>09:30</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>15:00</option>
+                <option>15:30</option>
+                <option>16:00</option>
+                <option>16:30</option>
+                <option>17:00</option>
+                <option>17:30</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+                <option>20:00</option>
+            </select>
+        </div>
+
+        <textarea id="mensagem" placeholder="Observações (opcional)"></textarea>
+
+        <button type="submit">Agendar pelo WhatsApp</button>
+    </form>
+</section>
+
+<script>
+    const imagens = document.querySelectorAll('.galeria-img');
+    const modal = document.getElementById('modalGaleria');
+    const imagemModal = document.getElementById('imagemModal');
+    const fecharModal = document.getElementById('fecharModal');
+    const btnAnterior = document.getElementById('anterior');
+    const btnProxima = document.getElementById('proxima');
+
+    let imagemAtual = 0;
+    const listaImagens = Array.from(imagens).map(img => img.src);
+
+    function abrirModal(index) {
+        imagemAtual = index;
+        imagemModal.src = listaImagens[imagemAtual];
+        modal.style.display = 'flex';
+    }
+
+    function fecharOModal() {
+        modal.style.display = 'none';
+    }
+
+    function mostrarProxima() {
+        imagemAtual = (imagemAtual + 1) % listaImagens.length;
+        imagemModal.src = listaImagens[imagemAtual];
+    }
+
+    function mostrarAnterior() {
+        imagemAtual = (imagemAtual - 1 + listaImagens.length) % listaImagens.length;
+        imagemModal.src = listaImagens[imagemAtual];
+    }
+
+    imagens.forEach((img, index) => {
+        img.addEventListener('click', () => abrirModal(index));
+    });
+
+    fecharModal.addEventListener('click', fecharOModal);
+    btnProxima.addEventListener('click', mostrarProxima);
+    btnAnterior.addEventListener('click', mostrarAnterior);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            fecharOModal();
+        }
+    });
+
+    const form = document.getElementById('formAgendamento');
+    const inputData = document.getElementById('data');
+
+    inputData.addEventListener('change', function() {
+        const dataSelecionada = new Date(this.value + "T00:00:00");
+        const diaSemana = dataSelecionada.getDay();
+
+        if (diaSemana === 0 || diaSemana === 1) {
+            alert("Selecionar um dia entre terça e sábado.");
+            this.value = "";
+        }
+    });
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value.trim();
+        const telefone = document.getElementById('telefone').value.trim();
+        const servico = document.getElementById('servico').value;
+        const dataRaw = document.getElementById('data').value;
+        const hora = document.getElementById('hora').value;
+        const mensagem = document.getElementById('mensagem').value.trim();
+
+        if (!dataRaw) {
+            alert("Selecione uma data válida.");
+            return;
+        }
+
+        const [ano, mes, dia] = dataRaw.split("-");
+        const dataFormatada = `${dia}/${mes}/${ano}`;
+
+        const texto = `Olá! Gostaria de agendar um horário na barbearia Alemão do Corte.%0A%0A👤 Nome: ${nome}%0A📞 Telefone: ${telefone}%0A✂️ Serviço: ${servico}%0A📅 Data: ${dataFormatada}%0A⏰ Horário: ${hora}%0A📝 Observações: ${mensagem}`;
+
+        const numero = "5511949339096"; // TROQUE PELO NÚMERO REAL
+
+        const url = `https://wa.me/${numero}?text=${texto}`;
+        window.open(url, '_blank');
+    });
+</script>
+
+</body>
+</html>
